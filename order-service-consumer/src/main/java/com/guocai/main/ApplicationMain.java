@@ -1,6 +1,5 @@
 package com.guocai.main;
 
-import com.guocai.gmall.service.OrderService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,8 +19,8 @@ import java.io.IOException;
 public class ApplicationMain {
     public static void main(String[] args) throws IOException {
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-        OrderService orderService = ac.getBean(OrderService.class);
-        orderService.initOrder("1");
+        /*OrderService orderService = ac.getBean(OrderService.class);
+        orderService.initOrder("1");*/
         System.out.println(ac);
         System.in.read();
     }
